@@ -1,0 +1,10 @@
+<%- include("./partials/header")%>
+
+<h1>Sign Up!</h1>
+
+<form action="/register" method="post">
+	<input type="text" name="username" placeholder="username" pattern=".{5,10}" required title="5 to 10 characters" required>
+	<input type="password" name="password" placeholder="password" required>
+	<button>Join</button>
+</form>
+<%- include("./partials/footer")%>
